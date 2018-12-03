@@ -16,6 +16,7 @@ void sort_int_array(int *ary, int ary_size){
   }
   return;
   */
+  //quicksort
   int i, j, pivot, tmp;
   pivot = *ary;
   if(ary_size<=1 || ary==NULL) return;
