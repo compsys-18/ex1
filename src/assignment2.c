@@ -3,6 +3,19 @@
 #include<time.h>
 
 void sort_int_array(int *ary, int ary_size){
+  /*
+  int i, j, tmp;
+  for(i=0; i<ary_size-1; i++){
+    for(j=1; j<ary_size-i; j++){
+      if(*(ary+j-1) > *(ary+j)){
+        tmp = *(ary+j);
+        *(ary+j) = *(ary+j-1);
+        *(ary+j-1) = tmp;
+      }
+    }
+  }
+  return;
+  */
   int i, j, pivot, tmp;
   pivot = *ary;
   if(ary_size<=1 || ary==NULL) return;
